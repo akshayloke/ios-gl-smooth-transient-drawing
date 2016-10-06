@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		825578021DA6EF580016BC46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 825578011DA6EF580016BC46 /* main.m */; };
+		825578051DA6EF580016BC46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 825578041DA6EF580016BC46 /* AppDelegate.m */; };
+		825578081DA6EF580016BC46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 825578071DA6EF580016BC46 /* ViewController.m */; };
+		8255780B1DA6EF580016BC46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825578091DA6EF580016BC46 /* Main.storyboard */; };
+		8255780D1DA6EF580016BC46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8255780C1DA6EF580016BC46 /* Assets.xcassets */; };
+		825578101DA6EF580016BC46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8255780E1DA6EF580016BC46 /* LaunchScreen.storyboard */; };
+		8255782C1DA6EFCE0016BC46 /* GLBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 825578181DA6EFCE0016BC46 /* GLBuffer.m */; };
+		8255782D1DA6EFCE0016BC46 /* GLDoubleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8255781A1DA6EFCE0016BC46 /* GLDoubleBuffer.m */; };
+		8255782E1DA6EFCE0016BC46 /* GLDrawingRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8255781C1DA6EFCE0016BC46 /* GLDrawingRenderer.m */; };
+		8255782F1DA6EFCE0016BC46 /* GLPrimitives.m in Sources */ = {isa = PBXBuildFile; fileRef = 8255781E1DA6EFCE0016BC46 /* GLPrimitives.m */; };
+		825578301DA6EFCE0016BC46 /* GLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 825578201DA6EFCE0016BC46 /* GLRenderer.m */; };
+		825578311DA6EFCE0016BC46 /* GLRenderToScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 825578231DA6EFCE0016BC46 /* GLRenderToScreen.m */; };
+		825578321DA6EFCE0016BC46 /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 825578261DA6EFCE0016BC46 /* GLViewController.m */; };
+		825578331DA6EFCE0016BC46 /* DrawingShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 825578281DA6EFCE0016BC46 /* DrawingShader.fsh */; };
+		825578341DA6EFCE0016BC46 /* DrawingShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 825578291DA6EFCE0016BC46 /* DrawingShader.vsh */; };
+		825578351DA6EFCE0016BC46 /* RenderToScreenShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8255782A1DA6EFCE0016BC46 /* RenderToScreenShader.fsh */; };
+		825578361DA6EFCE0016BC46 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8255782B1DA6EFCE0016BC46 /* Shader.vsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		825577FD1DA6EF580016BC46 /* iOS-GL-SmoothTransientDrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-GL-SmoothTransientDrawing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		825578011DA6EF580016BC46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		825578031DA6EF580016BC46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		825578041DA6EF580016BC46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		825578061DA6EF580016BC46 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		825578071DA6EF580016BC46 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8255780A1DA6EF580016BC46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8255780C1DA6EF580016BC46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8255780F1DA6EF580016BC46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		825578111DA6EF580016BC46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		825578171DA6EFCE0016BC46 /* GLBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBuffer.h; sourceTree = "<group>"; };
+		825578181DA6EFCE0016BC46 /* GLBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBuffer.m; sourceTree = "<group>"; };
+		825578191DA6EFCE0016BC46 /* GLDoubleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDoubleBuffer.h; sourceTree = "<group>"; };
+		8255781A1DA6EFCE0016BC46 /* GLDoubleBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDoubleBuffer.m; sourceTree = "<group>"; };
+		8255781B1DA6EFCE0016BC46 /* GLDrawingRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDrawingRenderer.h; sourceTree = "<group>"; };
+		8255781C1DA6EFCE0016BC46 /* GLDrawingRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDrawingRenderer.m; sourceTree = "<group>"; };
+		8255781D1DA6EFCE0016BC46 /* GLPrimitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPrimitives.h; sourceTree = "<group>"; };
+		8255781E1DA6EFCE0016BC46 /* GLPrimitives.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPrimitives.m; sourceTree = "<group>"; };
+		8255781F1DA6EFCE0016BC46 /* GLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRenderer.h; sourceTree = "<group>"; };
+		825578201DA6EFCE0016BC46 /* GLRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLRenderer.m; sourceTree = "<group>"; };
+		825578211DA6EFCE0016BC46 /* GLRendererPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRendererPrivate.h; sourceTree = "<group>"; };
+		825578221DA6EFCE0016BC46 /* GLRenderToScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRenderToScreen.h; sourceTree = "<group>"; };
+		825578231DA6EFCE0016BC46 /* GLRenderToScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLRenderToScreen.m; sourceTree = "<group>"; };
+		825578241DA6EFCE0016BC46 /* GLTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTypes.h; sourceTree = "<group>"; };
+		825578251DA6EFCE0016BC46 /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
+		825578261DA6EFCE0016BC46 /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
+		825578281DA6EFCE0016BC46 /* DrawingShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = DrawingShader.fsh; sourceTree = "<group>"; };
+		825578291DA6EFCE0016BC46 /* DrawingShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = DrawingShader.vsh; sourceTree = "<group>"; };
+		8255782A1DA6EFCE0016BC46 /* RenderToScreenShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RenderToScreenShader.fsh; sourceTree = "<group>"; };
+		8255782B1DA6EFCE0016BC46 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		825577FA1DA6EF580016BC46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		825577F41DA6EF580016BC46 = {
+			isa = PBXGroup;
+			children = (
+				825577FF1DA6EF580016BC46 /* iOS-GL-SmoothTransientDrawing */,
+				825577FE1DA6EF580016BC46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		825577FE1DA6EF580016BC46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				825577FD1DA6EF580016BC46 /* iOS-GL-SmoothTransientDrawing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		825577FF1DA6EF580016BC46 /* iOS-GL-SmoothTransientDrawing */ = {
+			isa = PBXGroup;
+			children = (
+				825578171DA6EFCE0016BC46 /* GLBuffer.h */,
+				825578181DA6EFCE0016BC46 /* GLBuffer.m */,
+				825578191DA6EFCE0016BC46 /* GLDoubleBuffer.h */,
+				8255781A1DA6EFCE0016BC46 /* GLDoubleBuffer.m */,
+				8255781B1DA6EFCE0016BC46 /* GLDrawingRenderer.h */,
+				8255781C1DA6EFCE0016BC46 /* GLDrawingRenderer.m */,
+				8255781D1DA6EFCE0016BC46 /* GLPrimitives.h */,
+				8255781E1DA6EFCE0016BC46 /* GLPrimitives.m */,
+				8255781F1DA6EFCE0016BC46 /* GLRenderer.h */,
+				825578201DA6EFCE0016BC46 /* GLRenderer.m */,
+				825578211DA6EFCE0016BC46 /* GLRendererPrivate.h */,
+				825578221DA6EFCE0016BC46 /* GLRenderToScreen.h */,
+				825578231DA6EFCE0016BC46 /* GLRenderToScreen.m */,
+				825578241DA6EFCE0016BC46 /* GLTypes.h */,
+				825578251DA6EFCE0016BC46 /* GLViewController.h */,
+				825578261DA6EFCE0016BC46 /* GLViewController.m */,
+				825578271DA6EFCE0016BC46 /* Shaders */,
+				825578031DA6EF580016BC46 /* AppDelegate.h */,
+				825578041DA6EF580016BC46 /* AppDelegate.m */,
+				825578061DA6EF580016BC46 /* ViewController.h */,
+				825578071DA6EF580016BC46 /* ViewController.m */,
+				825578091DA6EF580016BC46 /* Main.storyboard */,
+				8255780C1DA6EF580016BC46 /* Assets.xcassets */,
+				8255780E1DA6EF580016BC46 /* LaunchScreen.storyboard */,
+				825578111DA6EF580016BC46 /* Info.plist */,
+				825578001DA6EF580016BC46 /* Supporting Files */,
+			);
+			path = "iOS-GL-SmoothTransientDrawing";
+			sourceTree = "<group>";
+		};
+		825578001DA6EF580016BC46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				825578011DA6EF580016BC46 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		825578271DA6EFCE0016BC46 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				825578281DA6EFCE0016BC46 /* DrawingShader.fsh */,
+				825578291DA6EFCE0016BC46 /* DrawingShader.vsh */,
+				8255782A1DA6EFCE0016BC46 /* RenderToScreenShader.fsh */,
+				8255782B1DA6EFCE0016BC46 /* Shader.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		825577FC1DA6EF580016BC46 /* iOS-GL-SmoothTransientDrawing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 825578141DA6EF580016BC46 /* Build configuration list for PBXNativeTarget "iOS-GL-SmoothTransientDrawing" */;
+			buildPhases = (
+				825577F91DA6EF580016BC46 /* Sources */,
+				825577FA1DA6EF580016BC46 /* Frameworks */,
+				825577FB1DA6EF580016BC46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-GL-SmoothTransientDrawing";
+			productName = "iOS-GL-SmoothTransientDrawing";
+			productReference = 825577FD1DA6EF580016BC46 /* iOS-GL-SmoothTransientDrawing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		825577F51DA6EF580016BC46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Akshay Loke";
+				TargetAttributes = {
+					825577FC1DA6EF580016BC46 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZZT93853T6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 825577F81DA6EF580016BC46 /* Build configuration list for PBXProject "iOS-GL-SmoothTransientDrawing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 825577F41DA6EF580016BC46;
+			productRefGroup = 825577FE1DA6EF580016BC46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				825577FC1DA6EF580016BC46 /* iOS-GL-SmoothTransientDrawing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		825577FB1DA6EF580016BC46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825578101DA6EF580016BC46 /* LaunchScreen.storyboard in Resources */,
+				825578361DA6EFCE0016BC46 /* Shader.vsh in Resources */,
+				825578351DA6EFCE0016BC46 /* RenderToScreenShader.fsh in Resources */,
+				8255780D1DA6EF580016BC46 /* Assets.xcassets in Resources */,
+				8255780B1DA6EF580016BC46 /* Main.storyboard in Resources */,
+				825578341DA6EFCE0016BC46 /* DrawingShader.vsh in Resources */,
+				825578331DA6EFCE0016BC46 /* DrawingShader.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		825577F91DA6EF580016BC46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8255782F1DA6EFCE0016BC46 /* GLPrimitives.m in Sources */,
+				825578301DA6EFCE0016BC46 /* GLRenderer.m in Sources */,
+				825578081DA6EF580016BC46 /* ViewController.m in Sources */,
+				825578051DA6EF580016BC46 /* AppDelegate.m in Sources */,
+				825578311DA6EFCE0016BC46 /* GLRenderToScreen.m in Sources */,
+				8255782D1DA6EFCE0016BC46 /* GLDoubleBuffer.m in Sources */,
+				8255782C1DA6EFCE0016BC46 /* GLBuffer.m in Sources */,
+				825578321DA6EFCE0016BC46 /* GLViewController.m in Sources */,
+				8255782E1DA6EFCE0016BC46 /* GLDrawingRenderer.m in Sources */,
+				825578021DA6EF580016BC46 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		825578091DA6EF580016BC46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8255780A1DA6EF580016BC46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8255780E1DA6EF580016BC46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8255780F1DA6EF580016BC46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		825578121DA6EF580016BC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		825578131DA6EF580016BC46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		825578151DA6EF580016BC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZZT93853T6;
+				INFOPLIST_FILE = "iOS-GL-SmoothTransientDrawing/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akshayloke.iOS-GL-SmoothTransientDrawing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		825578161DA6EF580016BC46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZZT93853T6;
+				INFOPLIST_FILE = "iOS-GL-SmoothTransientDrawing/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akshayloke.iOS-GL-SmoothTransientDrawing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		825577F81DA6EF580016BC46 /* Build configuration list for PBXProject "iOS-GL-SmoothTransientDrawing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				825578121DA6EF580016BC46 /* Debug */,
+				825578131DA6EF580016BC46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		825578141DA6EF580016BC46 /* Build configuration list for PBXNativeTarget "iOS-GL-SmoothTransientDrawing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				825578151DA6EF580016BC46 /* Debug */,
+				825578161DA6EF580016BC46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 825577F51DA6EF580016BC46 /* Project object */;
+}
